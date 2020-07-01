@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">学校</string>
+    <string name="strMsgRp">来年もやり直してください！</string>
+    <string name="strMsgRc">もっと勉強する！まだ可能です！</string>
+    <string name="strMsgAp">おめでとう</string>
+    <string name="strSitRp">不承認</string>
+    <string name="strSitRc">テストをやり直す</string>
+    <string name="strSitApproved">承認済み</string>
+    <string name="strZerp">0.0</string>
+    <string name="strSit">状態</string>
+    <string name="strM">平均</string>
+    <string name="strCalc">計算する</string>
+    <string name="strN2">注2</string>
+    <string name="strN1">注1</string>
+</resources>

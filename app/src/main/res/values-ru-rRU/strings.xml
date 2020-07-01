@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Школа</string>
+    <string name="strMsgRp">Попробуйте еще раз в следующем году!</string>
+    <string name="strMsgRc">Учись больше! Это все еще возможно!</string>
+    <string name="strMsgAp">Поздравляю</string>
+    <string name="strSitRp">Отклонено</string>
+    <string name="strSitRc">Повторить тест</string>
+    <string name="strSitApproved">утвержденный</string>
+    <string name="strZerp">0.0</string>
+    <string name="strSit">Положение дел</string>
+    <string name="strM">Средний</string>
+    <string name="strCalc">Рассчитать</string>
+    <string name="strN2">Заметка 2</string>
+    <string name="strN1">Примечание 1</string>
+</resources>
