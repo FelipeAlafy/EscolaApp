@@ -13,4 +13,5 @@
     <string name="strCalc">計算する</string>
     <string name="strN2">注2</string>
     <string name="strN1">注1</string>
+    <string name="msgErro">数字を入力してください！</string>
 </resources>

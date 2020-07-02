@@ -28,21 +28,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calc(View view) {
-        // Conta
-        float n1 = Float.parseFloat(editN1.getText().toString());
-        float n2 = Float.parseFloat(editN2.getText().toString());
-        float media = (n1 + n2)/2;
+        //Verificando os dados
+        boolean ok = true;
+        if(editN1.getText().toString().trim().isEmpty()){
+            ok = false;
+            editN1.setError(getString(R.string.msgErro));
+        }
+        if(editN2.getText().toString().trim().isEmpty()){
+            ok = false;
+            editN2.setError(getString(R.string.msgErro));
+        }
+        if(ok) {
+            // Conta
+            float n1 = Float.parseFloat(editN1.getText().toString());
+            float n2 = Float.parseFloat(editN2.getText().toString());
+            float media = (n1 + n2) / 2;
 
-        //Colocando o resultado na tela
-        txtM.setText(String.format("%.1f", media));
+            //Colocando o resultado na tela
+            txtM.setText(String.format("%.1f", media));
 
-        //Definindo a situação do aluno
-        if(media > 7) {
-            txtSit.setText(getString(R.string.strMsgAp));
-        } else if((media > 5) && (media < 7)) {
-            txtSit.setText(getString(R.string.strMsgRc));
-        } else {
-            txtSit.setText(getString(R.string.strMsgRp));
+            //Definindo a situação do aluno
+            if (media > 7) {
+                txtSit.setText(getString(R.string.strMsgAp));
+            } else if ((media > 5) && (media < 7)) {
+                txtSit.setText(getString(R.string.strMsgRc));
+            } else {
+                txtSit.setText(getString(R.string.strMsgRp));
+            }
         }
     }
 }

@@ -13,4 +13,5 @@
     <string name="strMsgAp">Parabéns</string>
     <string name="strMsgRc">Estude Mais! Ainda é possível!</string>
     <string name="strMsgRp">Tente novamente no ano que vem!</string>
+    <string name="msgErro">Digite um número!</string>
 </resources>

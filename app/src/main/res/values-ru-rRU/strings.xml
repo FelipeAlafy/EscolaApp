@@ -13,4 +13,5 @@
     <string name="strCalc">Рассчитать</string>
     <string name="strN2">Заметка 2</string>
     <string name="strN1">Примечание 1</string>
+    <string name="msgErro">введите номер!</string>
 </resources>
