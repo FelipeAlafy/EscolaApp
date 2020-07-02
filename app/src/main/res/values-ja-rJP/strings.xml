@@ -6,7 +6,7 @@
     <string name="strMsgAp">おめでとう</string>
     <string name="strSitRp">不承認</string>
     <string name="strSitRc">テストをやり直す</string>
-    <string name="strSitApproved">承認済み</string>
+    <string name="strSitAp">承認済み</string>
     <string name="strZerp">0.0</string>
     <string name="strSit">状態</string>
     <string name="strM">平均</string>

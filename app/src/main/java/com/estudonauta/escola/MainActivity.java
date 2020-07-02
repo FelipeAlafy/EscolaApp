@@ -2,6 +2,8 @@ package com.estudonauta.escola;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.graphics.drawable.Icon;
 import android.os.Bundle;
 import android.view.View;
@@ -49,11 +51,14 @@ public class MainActivity extends AppCompatActivity {
 
             //Definindo a situação do aluno
             if (media > 7) {
-                txtSit.setText(getString(R.string.strMsgAp));
+                txtSit.setText(getString(R.string.strSitAp));
+                txtSit.setTextColor(Color.parseColor("#0e801b"));
             } else if ((media > 5) && (media < 7)) {
-                txtSit.setText(getString(R.string.strMsgRc));
+                txtSit.setText(getString(R.string.strSitRc));
+                txtSit.setTextColor(Color.parseColor("#21219c"));
             } else {
-                txtSit.setText(getString(R.string.strMsgRp));
+                txtSit.setText(getString(R.string.strSitRp));
+                txtSit.setTextColor(Color.parseColor("#7e1010"));
             }
         }
     }

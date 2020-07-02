@@ -6,7 +6,7 @@
     <string name="strCalc">Calcular</string>
     <string name="strM">Média</string>
     <string name="strZerp">0.0</string>
-    <string name="strSitApproved">Aprovado</string>
+    <string name="strSitAp">Aprovado</string>
     <string name="strSitRc">Refazer a prova</string>
     <string name="strSitRp">Reprovado</string>
     <string name="strSit">Status</string>

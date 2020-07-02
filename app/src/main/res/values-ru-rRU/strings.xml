@@ -6,7 +6,7 @@
     <string name="strMsgAp">Поздравляю</string>
     <string name="strSitRp">Отклонено</string>
     <string name="strSitRc">Повторить тест</string>
-    <string name="strSitApproved">утвержденный</string>
+    <string name="strSitAp">утвержденный</string>
     <string name="strZerp">0.0</string>
     <string name="strSit">Положение дел</string>
     <string name="strM">Средний</string>

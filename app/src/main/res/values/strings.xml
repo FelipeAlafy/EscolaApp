@@ -6,7 +6,7 @@
     <string name="strM">Average</string>
     <string name="strSit">Status</string>
     <string name="strZerp">0.0</string>
-    <string name="strSitApproved">Approved</string>
+    <string name="strSitAp">Approved</string>
     <string name="strSitRc">Retake test</string>
     <string name="strSitRp">Disapproved</string>
     <string name="strMsgAp">Congratulations!</string>

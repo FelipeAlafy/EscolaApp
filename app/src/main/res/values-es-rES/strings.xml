@@ -6,7 +6,7 @@
     <string name="strCalc">Calcular</string>
     <string name="strM">Promedio</string>
     <string name="strZerp">0.0</string>
-    <string name="strSitApproved">Aprobado</string>
+    <string name="strSitAp">Aprobado</string>
     <string name="strSitRc">Rehacer la prueba</string>
     <string name="strSitRp">Rechazado</string>
     <string name="strSit">Estado</string>
