@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,12 +54,15 @@ public class MainActivity extends AppCompatActivity {
             if (media > 7) {
                 txtSit.setText(getString(R.string.strSitAp));
                 txtSit.setTextColor(Color.parseColor("#0e801b"));
+                Toast.makeText(getApplicationContext(), getString(R.string.strMsgAp), Toast.LENGTH_SHORT).show();
             } else if ((media > 5) && (media < 7)) {
                 txtSit.setText(getString(R.string.strSitRc));
                 txtSit.setTextColor(Color.parseColor("#21219c"));
+                Toast.makeText(getApplicationContext(), getString(R.string.strMsgRc), Toast.LENGTH_SHORT).show();
             } else {
                 txtSit.setText(getString(R.string.strSitRp));
                 txtSit.setTextColor(Color.parseColor("#7e1010"));
+                Toast.makeText(getApplicationContext(), getString(R.string.strMsgRp), Toast.LENGTH_SHORT).show();
             }
         }
     }
