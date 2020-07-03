@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     EditText        editN1, editN2;
     TextView        txtM, txtSit;
     ImageView       imgSit;
-    LinearLayout    layDados;
+    LinearLayout    layRes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +29,9 @@ public class MainActivity extends AppCompatActivity {
         editN2   =     findViewById(R.id.editTextNumberDecimal2);
         txtM     =     findViewById(R.id.txtResMedia);
         txtSit   =     findViewById(R.id.txtSit);
-        layDados =     findViewById(R.id.layDados);
+        layRes =     findViewById(R.id.layRes);
         imgSit   =     findViewById(R.id.imgSit);
+        layRes.setVisibility(View.INVISIBLE);
     }
 
     public void calc(View view) {
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             float media = (n1 + n2) / 2;
 
             //Colocando o resultado na tela
+            layRes.setVisibility(View.VISIBLE);
             txtM.setText(String.format("%.1f", media));
 
             //Definindo a situação do aluno
