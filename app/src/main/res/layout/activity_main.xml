@@ -95,7 +95,7 @@
         <LinearLayout
             android:id="@+id/layRes"
             android:layout_width="match_parent"
-            android:layout_height="458dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
@@ -125,6 +125,12 @@
                 android:layout_height="wrap_content"
                 android:text="@string/strSitRc"
                 android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/imgSit"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/emojireprovado" />
 
         </LinearLayout>
     </LinearLayout>
