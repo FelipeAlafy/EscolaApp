@@ -2,11 +2,11 @@ package com.estudonauta.escola;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.res.ColorStateList;
+import android.content.Context;
 import android.graphics.Color;
-import android.graphics.drawable.Icon;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     ImageView       imgSit;
     LinearLayout    layRes;
 
+    InputMethodManager imm;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,8 +31,12 @@ public class MainActivity extends AppCompatActivity {
         editN2   =     findViewById(R.id.editTextNumberDecimal2);
         txtM     =     findViewById(R.id.txtResMedia);
         txtSit   =     findViewById(R.id.txtSit);
-        layRes =     findViewById(R.id.layRes);
+        layRes   =     findViewById(R.id.layRes);
         imgSit   =     findViewById(R.id.imgSit);
+
+        //Pegando o serviço do teclado
+        imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+
         //Escondendo o LayRes
         layRes.setVisibility(View.INVISIBLE);
     }
@@ -52,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
             float n2 = Float.parseFloat(editN2.getText().toString());
             float media = (n1 + n2) / 2;
 
+            //Abaixando o teclado
+            imm.hideSoftInputFromWindow(editN2.getWindowToken(), 0);
+
             //Tornando o layRes visivel.
             layRes.setVisibility(View.VISIBLE);
 
@@ -59,24 +68,24 @@ public class MainActivity extends AppCompatActivity {
             txtM.setText(String.format("%.1f", media));
 
             //Definindo a situação do aluno
-            if (media > 7) {
-                txtSit.setText(getString(R.string.strSitAp));
+            if (media < 5) {
+                txtSit.setText(getString(R.string.strSitRp));
                 //Coisas Visuais
-                txtSit.setTextColor(Color.parseColor("#0e801b"));
-                Toast.makeText(getApplicationContext(), getString(R.string.strMsgAp), Toast.LENGTH_SHORT).show();
-                imgSit.setImageResource(R.drawable.emojiaprovado);
-            } else if ((media > 5) && (media < 7)) {
+                txtSit.setTextColor(Color.parseColor("#7e1010"));
+                Toast.makeText(getApplicationContext(), getString(R.string.strMsgRp), Toast.LENGTH_SHORT).show();
+                imgSit.setImageResource(R.drawable.emojireprovado);
+            } else if ((media > 5) && (media < 6)) {
                 txtSit.setText(getString(R.string.strSitRc));
                 //Coisas Visuais
                 txtSit.setTextColor(Color.parseColor("#21219c"));
                 Toast.makeText(getApplicationContext(), getString(R.string.strMsgRc), Toast.LENGTH_SHORT).show();
                 imgSit.setImageResource(R.drawable.emojirecuperacao);
             } else {
-                txtSit.setText(getString(R.string.strSitRp));
+                txtSit.setText(getString(R.string.strSitAp));
                 //Coisas Visuais
-                txtSit.setTextColor(Color.parseColor("#7e1010"));
-                Toast.makeText(getApplicationContext(), getString(R.string.strMsgRp), Toast.LENGTH_SHORT).show();
-                imgSit.setImageResource(R.drawable.emojireprovado);
+                txtSit.setTextColor(Color.parseColor("#0e801b"));
+                Toast.makeText(getApplicationContext(), getString(R.string.strMsgAp), Toast.LENGTH_SHORT).show();
+                imgSit.setImageResource(R.drawable.emojiaprovado);
             }
         }
     }
