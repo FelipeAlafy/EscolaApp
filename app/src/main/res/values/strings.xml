@@ -6,11 +6,12 @@
     <string name="strM">Average</string>
     <string name="strSit">Status</string>
     <string name="strZerp">0.0</string>
-    <string name="strSitApproved">Approved</string>
+    <string name="strSitAp">Approved</string>
     <string name="strSitRc">Retake test</string>
     <string name="strSitRp">Disapproved</string>
     <string name="strMsgAp">Congratulations!</string>
     <string name="strMsgRc">Study More! it\'s still possible!</string>
     <string name="strMsgRp">Please try again next year!</string>
     <string name="msgErro">Type a number!</string>
+    <string name="edtTextInput">Input Value</string>
 </resources>

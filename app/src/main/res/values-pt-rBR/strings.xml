@@ -6,7 +6,7 @@
     <string name="strCalc">Calcular</string>
     <string name="strM">Média</string>
     <string name="strZerp">0.0</string>
-    <string name="strSitApproved">Aprovado</string>
+    <string name="strSitAp">Aprovado</string>
     <string name="strSitRc">Refazer a prova</string>
     <string name="strSitRp">Reprovado</string>
     <string name="strSit">Status</string>
@@ -14,4 +14,5 @@
     <string name="strMsgRc">Estude Mais! Ainda é possível!</string>
     <string name="strMsgRp">Tente novamente no ano que vem!</string>
     <string name="msgErro">Digite um número!</string>
+    <string name="edtTextInput">Entre com o valor</string>
 </resources>
