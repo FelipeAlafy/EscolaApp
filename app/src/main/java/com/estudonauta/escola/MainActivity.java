@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         txtSit   =     findViewById(R.id.txtSit);
         layRes =     findViewById(R.id.layRes);
         imgSit   =     findViewById(R.id.imgSit);
+        //Escondendo o LayRes
         layRes.setVisibility(View.INVISIBLE);
     }
 
@@ -51,8 +52,10 @@ public class MainActivity extends AppCompatActivity {
             float n2 = Float.parseFloat(editN2.getText().toString());
             float media = (n1 + n2) / 2;
 
-            //Colocando o resultado na tela
+            //Tornando o layRes visivel.
             layRes.setVisibility(View.VISIBLE);
+
+            //Colocando o resultado na tela
             txtM.setText(String.format("%.1f", media));
 
             //Definindo a situação do aluno

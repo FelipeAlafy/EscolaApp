@@ -14,4 +14,5 @@
     <string name="strMsgRc">¡Estudia más! ¡Aún es posible!</string>
     <string name="strMsgRp">¡Inténtalo de nuevo el año que viene!</string>
     <string name="msgErro">¡Ingrese un numero!</string>
+    <string name="edtTextInput">Ingrese el valor</string>
 </resources>

@@ -59,9 +59,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints=""
-                android:contentDescription="@string/strN1"
+                android:contentDescription="@string/strZerp"
                 android:ems="10"
-                android:hint="@string/strZerp"
                 android:inputType="numberDecimal" />
 
             <TextView
@@ -78,7 +77,6 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/strN2"
                 android:ems="10"
-                android:hint="@string/strZerp"
                 android:importantForAutofill="no"
                 android:inputType="numberDecimal" />
 
@@ -130,6 +128,7 @@
                 android:id="@+id/imgSit"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
+                android:contentDescription="@string/strSit"
                 app:srcCompat="@drawable/emojireprovado" />
 
         </LinearLayout>
