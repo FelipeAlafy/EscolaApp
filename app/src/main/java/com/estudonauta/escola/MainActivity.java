@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 txtSit.setTextColor(Color.parseColor("#7e1010"));
                 Toast.makeText(getApplicationContext(), getString(R.string.strMsgRp), Toast.LENGTH_SHORT).show();
                 imgSit.setImageResource(R.drawable.emojireprovado);
-            } else if ((media > 5) && (media < 6)) {
+            } else if ((media >= 5) && (media < 6)) {
                 txtSit.setText(getString(R.string.strSitRc));
                 //Coisas Visuais
                 txtSit.setTextColor(Color.parseColor("#21219c"));
